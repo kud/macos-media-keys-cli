@@ -1,0 +1,45 @@
+{
+  "name": "@kud/macos-media-keys-cli",
+  "version": "0.1.0",
+  "description": "CLI to send macOS system media keys — play/pause, next, previous, fast-forward, rewind",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kud/macos-media-keys-cli.git"
+  },
+  "keywords": [
+    "macos",
+    "media-keys",
+    "media-control",
+    "play-pause",
+    "cli"
+  ],
+  "bin": {
+    "media-keys": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@kud/macos-media-keys": "0.1.0",
+    "citty": "0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.0.0",
+    "tsup": "8.5.1",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3"
+  }
+}
